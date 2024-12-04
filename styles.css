@@ -1,0 +1,57 @@
+/*-- scss:defaults --*/
+/* css styles */
+
+.red{
+    color: rgb(136, 1, 1);
+    font-weight: bold;
+}
+
+.blue{
+    color: darkblue;
+    font-weight: bold;
+}
+
+.def{
+    font-weight: bold;
+    color: darkblue;
+}
+
+#def-{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: green;
+    background-color: rgba(144, 238, 144, 0.05);
+}
+
+#exr-{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: gray;
+    background-color: rgba(128, 128, 128, 0.05);
+}
+
+#exm-{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: orange;
+    background-color: rgba(255, 166, 0, 0.05);
+}
+
+#thm-, #lem-, #lem-Kbar, #thm-many_one, #thm-R-closure, #thm-complement, #thm-K, #cor-{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border-style: solid;
+    border-color: darkblue;
+    background-color: rgba(0, 0, 255, 0.05);
+}
+
+.callout{
+    background-color: white;
+}
