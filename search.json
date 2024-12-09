@@ -4,11 +4,7 @@
     "href": "WP.html",
     "title": "Reductions from WP",
     "section": "",
-    "text": "Important\n\n\n\nThis section will be available closer to the class",
-    "crumbs": [
-      "*Lab classes*",
-      "Reductions from WP"
-    ]
+    "text": "Important\n\n\n\nThis section will be available closer to the class"
   },
   {
     "objectID": "TM.html",
@@ -104,7 +100,7 @@
     "href": "index.html",
     "title": "Theory of Computation",
     "section": "",
-    "text": "I’m Ilario Bonacina, I’m substituting Carme Àlvarez Faura for the following last three lab classes of the Theory of Computation (TC) course.\nThis webpage is just for support of the last 3 labs of the TC course, please refer to the racó and to the official course page for announcements/additional material etc.\n\n\n\n\n\n\n\n\n Upcoming lab\n\n\n\nReductions from K\n\n\n\n\n\n\n\n\n\n\n\nContacts\n\n\n\nYou can contact me by email (ilario.bonacina+TC@upc.edu) for doubts/questions on the material up to 6 days before the exam.",
+    "text": "I’m Ilario Bonacina, I’m substituting Carme Àlvarez Faura for the following lab class on Reduction to K of the Theory of Computation (TC) course. This webpage is just for support of this lab, please refer to the racó and to the official course page for announcements/additional material etc.\n\n\n\n\n\n\nContacts\n\n\n\nYou can contact me by email (ilario.bonacina+TC@upc.edu) for doubts/questions on the material up to 6 days before the exam.",
     "crumbs": [
       "Home"
     ]
@@ -114,10 +110,6 @@
     "href": "CFG.html",
     "title": "Reductions from CFG",
     "section": "",
-    "text": "Important\n\n\n\nThis section will be available closer to the class",
-    "crumbs": [
-      "*Lab classes*",
-      "Reductions from CFG"
-    ]
+    "text": "Important\n\n\n\nThis section will be available closer to the class"
   }
 ]
