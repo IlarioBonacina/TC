@@ -1,0 +1,19 @@
+/* css styles */
+.title {
+    text-align: center;
+    color: navy;
+    padding-top: 100px;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.emph{
+    color: darkred;
+    font-weight: bold;
+}
+
+.p{
+    text-align: center;
+}
