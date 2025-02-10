@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Teoría de la computación – TC</title>
+<title>Nociones y notaciones básicas – TC</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +23,26 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ce921b94100b9463e6155fdf55a0fbad.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
-<link href="site_libs/quarto-contrib/bootstrap-icons-1.11.1/all.css" rel="stylesheet">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../T1/operations.html" rel="next">
+<link href="../intro.html" rel="prev">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-ce921b94100b9463e6155fdf55a0fbad.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -124,7 +125,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">TC</span>
     </a>
   </div>
@@ -135,7 +136,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> <i class="bi bi-info-circle-fill" role="img">
+    <a class="nav-link" href="../index.html"> <i class="bi bi-info-circle-fill" role="img">
 </i> 
 <span class="menu-text">Info curso</span></a>
   </li>  
@@ -150,7 +151,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Teoría de la computación</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../T1/notation.html"><strong>1</strong> - Teoría de lenguajes</a></li><li class="breadcrumb-item"><a href="../T1/notation.html">Nociones y notaciones básicas</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Buscar" onclick="window.quartoOpenSearch();">
@@ -172,47 +173,47 @@ window.Quarto = {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+  <a href="../intro.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><em>Introducción</em></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
  <span class="menu-text"><strong>1</strong> - Teoría de lenguajes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Alternar sección">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T1/notation.html" class="sidebar-item-text sidebar-link">
+  <a href="../T1/notation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Nociones y notaciones básicas</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T1/operations.html" class="sidebar-item-text sidebar-link">
+  <a href="../T1/operations.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Operaciones sobre lenguajes</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T1/rewriting-rules.html" class="sidebar-item-text sidebar-link">
+  <a href="../T1/rewriting-rules.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Reglas de re-escritura</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T1/T1-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../T1/T1-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Auto-aprendizaje</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercises/T1-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
+  <a href="../exercises/T1-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
 </i> 
  <span class="menu-text">Ejercicios para la evaluación continua</span></a>
   </div>
@@ -230,14 +231,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T2/T2-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../T2/T2-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Auto-aprendizaje</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercises/T2-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
+  <a href="../exercises/T2-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
 </i> 
  <span class="menu-text">Ejercicios para la evaluación continua</span></a>
   </div>
@@ -262,14 +263,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T3/T3-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../T3/T3-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Auto-aprendizaje</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercises/T3-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
+  <a href="../exercises/T3-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
 </i> 
  <span class="menu-text">Ejercicios para la evaluación continua</span></a>
   </div>
@@ -294,14 +295,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T4/T4-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../T4/T4-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Auto-aprendizaje</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercises/T4-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
+  <a href="../exercises/T4-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
 </i> 
  <span class="menu-text">Ejercicios para la evaluación continua</span></a>
   </div>
@@ -326,14 +327,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T5_1/T5_1-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../T5_1/T5_1-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Auto-aprendizaje</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercises/T5.1-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
+  <a href="../exercises/T5.1-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
 </i> 
  <span class="menu-text">Ejercicios para la evaluación continua</span></a>
   </div>
@@ -351,14 +352,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T5_2/T5_2-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../T5_2/T5_2-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Auto-aprendizaje</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercises/T5.2-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
+  <a href="../exercises/T5.2-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
 </i> 
  <span class="menu-text">Ejercicios para la evaluación continua</span></a>
   </div>
@@ -383,14 +384,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T6/T6-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../T6/T6-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Auto-aprendizaje</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercises/T6-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
+  <a href="../exercises/T6-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
 </i> 
  <span class="menu-text">Ejercicios para la evaluación continua</span></a>
   </div>
@@ -408,14 +409,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T7/T7-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../T7/T7-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Auto-aprendizaje</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercises/T7-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
+  <a href="../exercises/T7-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
 </i> 
  <span class="menu-text">Ejercicios para la evaluación continua</span></a>
   </div>
@@ -440,14 +441,14 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./T8/T8-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
+  <a href="../T8/T8-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
  <span class="menu-text">Auto-aprendizaje</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./exercises/T8-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
+  <a href="../exercises/T8-exercises.html" class="sidebar-item-text sidebar-link"><i class="bi bi-bookmark-star" role="img">
 </i> 
  <span class="menu-text">Ejercicios para la evaluación continua</span></a>
   </div>
@@ -479,9 +480,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../T1/notation.html"><strong>1</strong> - Teoría de lenguajes</a></li><li class="breadcrumb-item"><a href="../T1/notation.html">Nociones y notaciones básicas</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Teoría de la computación</h1>
+<h1 class="title">Nociones y notaciones básicas</h1>
 </div>
 
 
@@ -498,263 +499,96 @@ window.Quarto = {
 </header>
 
 
-<p>Bienvenidos a <span class="emph">Teoría de la computación</span> (alias <span class="emph">TC</span>)!</p>
-<p>Soy <span class="emph">Ilario Bonacina</span> y si eres un estudiante de los <span class="emph">grupos 21P y 21L</span>, entonces soy uno de tus profesores para este cuatrimestre. Esta es la página web que utilizaré como apoyo para los problemas/clases de laboratorio de TC.</p>
-<div class="callout callout-style-default callout-tip no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-person-rolodex " style="" role="img" aria-hidden="true"></i> Contactos
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-1" class="callout-1-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>La profesora responsable del curso es <span class="emph">Carme Àlvarez Faura</span> (<a href="mailto:alvarez@cs.upc.edu">correo electrónico</a>). Para preguntas administrativas, por favor, preguntar a ella directamente.</p>
-<p>Mi correo electrónico para TC es <a href="mailto:ilario.bonacina+TC@upc.edu">ilario.bonacina+TC@upc.edu</a>. El último día posible para hacer preguntas por correo electrónico es <span class="emph-alert">5 dias antes del los examenes</span>. Para consultas presenciales, también podéis encontrarme en el despacho 223, edificio <span class="math inline">\Omega</span> (con cita previa por email).</p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-chat-left-text " style="" role="img" aria-hidden="true"></i> Metodologia docente
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p>Ver la <a href="https://www.cs.upc.edu/~alvarez/tc/DocentAvaluador.html">página principal</a> del curso. <!--
-
-La principal característica de la  metodologia docent és l'[auto-aprenentatge]{.emph} que es basa en la utilització del material docent  per conèixer els fonaments tèorics   de l'assignatura així com en la resolució de problemes  a la pissarra que consoliden aquests coneixements teòrics.  
-
-El professor introdueix els fonaments tèorics bàsics de cada tema i soluciona alguns problemes. Els estudiants aprenen la teoria durant el seu temps de treball personal mitjançant l'estudi dels temes indicats pel professor de  la bibliografia o dels vídeos  i d'altres materials complementaris com apunts, llibres i llistes de problemes resolts, tots ells lliurement accessibles a través de la web.
-
-[Durant les hores de problemes]{.emph}, els estudiants surten a la pissarra a explicar solucions a problemes que se'ls hi han assignat amb anterioritat. El professor  intervé per corregir una solució, matitzar un argument, o posar émfasi en aquells aspectes que considera rellevants i que no han quedat del tot clars en l'explicació de l'alumne. També pren nota de cada presentació per tal de tenir-la en compte en l'avaluació de l'assignatura.
-
-[Durant les hores de laboratori]{.emph}, els estudiants miren de resoldre problemes davant de la màquina que són avaluats automàticament. El professor està present per tal d'atendre els dubtes que els alumnes li puguin plantejar. Els estudiants poden aprofitar aquestes classes per preparar els problemes que se'ls hi han assignat amb anterioritat, però també per estudiar  el material teòric si no ho han fet abans pel seu compte, i per preguntar dubtes sobre la teoria.
-
-
---></p>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-note no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-book " style="" role="img" aria-hidden="true"></i> Referencias
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><br></p>
-<div class="columns">
-<div class="column" style="width:25%;">
-<p><a href="./references/TC-cases-marquez.pdf"><img src="./references/TC-cases-marquez.png" class="shadow img-fluid" style="width:90.0%"></a></p>
-</div><div class="column" style="width:75%;">
-<dl>
-<dt><a href="./references/TC-cases-marquez.pdf"><strong>Teoria de la computació – Llenguatges regulars i incontextuals</strong></a></dt>
-<dd>
-Rafel Cases, Lluís Màrquez<br>
-<strong>Tema 1</strong> — <a href="./references/TC-cases-marquez.pdf#page=7">Capítol 1</a><br>
-<strong>Tema 2</strong> — <a href="./references/TC-cases-marquez.pdf#page=71">Capítol 4</a> i <a href="./references/cases-marquez.pdf#page=111">Capítol 5</a><br>
-<strong>Tema 3</strong> — <a href="./references/TC-cases-marquez.pdf#page=25">Capítol 2</a> i <a href="./references/cases-marquez.pdf#page=49">Capítol 3</a><br>
-<strong>Tema 4</strong> — <a href="./references/TC-cases-marquez.pdf#page=125">Capítol 6</a> (des de la secció 6.1 fins la secció 6.4.)<br>
-<strong>Tema 5.1</strong> — <a href="./references/TC-cases-marquez.pdf#page=147">Capítol 7.1</a><br>
-<strong>Tema 5.2</strong> — <a href="./references/TC-cases-marquez.pdf#page=163">Capítol 8</a>
-</dd>
-</dl>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:25%;">
-<p><img src="./references/Sipser.jpg" class="shadow img-fluid" style="width:90.0%"></p>
-</div><div class="column" style="width:75%;">
-<dl>
-<dt><strong>Introduction to the Theory of Computation</strong></dt>
-<dd>
-Michael Sipser<br>
-CENGAGE Learning, 2013<br>
-<a href="https://ocw.mit.edu/courses/18-404j-theory-of-computation-fall-2020/video_galleries/video-lectures/">Sipser’s MIT Video Lectures</a>
-</dd>
-</dl>
-<p><strong>Tema 1</strong> — <em>Chapter 0. Introduction</em><br>
-<strong>Tema 2</strong> — <em>Section 1.1 Finite Automata</em> i <em>Section 1.2 Nondeterminism</em>. No conté una secció explícita per a la Minimització d’Autòmats, només <em>Problems 1.51 i 1.52</em>.<br>
-<strong>Tema 3</strong> — <em>Section 2.1 Context-Free Grammars</em><br>
-<strong>Tema 4</strong> — <em>Section 1.3 Regular Expressions</em><br>
-<strong>Tema 5.1</strong> — <em>Section 1.4 Non-regular Languages</em><br>
-<strong>Tema 5.2</strong> — <em>Section 2.2 Pushdown Automata</em><br>
-<strong>Tema 6</strong> — <em>Chapter 3. The Church-Turing Thesis</em> and <em>Section 4.1 Decidable Languages</em><br>
-<strong>Tema 7</strong> — <em>Section 4.2 Undecidability</em> and <em>Chapter 5. Reducibility</em><br>
-<strong>Tema 8</strong> — <em>Section 5.2 A Simple Undecidable Problem</em> and <em>Section 6.2 Decidability of Logical Theories</em></p>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:25%;">
-<p><a href="./references/TC-serna-alvarez-cases-lozano.pdf"><img src="./references/TC-Serna-Alvarez-Cases-Lozano.png" class="shadow img-fluid" style="width:90.0%"></a></p>
-</div><div class="column" style="width:75%;">
-<dl>
-<dt><a href="./references/TC-serna-alvarez-cases-lozano.pdf"><strong>Teoria de la computació – Computabilitat i indecidibilitat</strong></a></dt>
-<dd>
-Maria Serna, Carme Àlvarez, Rafel Cases, Antoni Lozano<br>
-<strong>Tema 6</strong> — <a href="./references/TC-serna-alvarez-cases-lozano.pdf#page=63">Capítol 1</a>, <a href="./references/TC-serna-alvarez-cases-lozano.pdf#page=5">Capítol 2</a> i <a href="./references/serna-alvarez-cases-lozano.pdf#page=45">Capítol 3</a><br>
-<strong>Tema 7</strong> — <a href="./references/TC-serna-alvarez-cases-lozano.pdf#page=63">Capítol 4</a><br>
-<strong>Tema 8</strong> — <a href="./references/TC-serna-alvarez-cases-lozano.pdf#page=81">Capítol 5</a>
-</dd>
-</dl>
-</div>
-</div>
-<p>Material complementario adicional es disponible a la <a href="https://www.cs.upc.edu/~alvarez/tc2.html">página principal</a> del curso.</p>
-</div>
-</div>
+<p>En este capítulo introduciremos las nociones y notaciones básicas sobre teoría de lenguajes que utilizaremos a lo largo del curso.</p>
+<p>Un <span class="def">alfabeto</span> es un conjunto finito a cuyos elementos llamaremos <span class="def">símbolos</span>. Usualmente lo denotaremos con el símbolo <span class="math inline">\Sigma</span> (Sigma). Aunque un alfabeto es un conjunto finito cualquiera, frecuentemente sus elementos serán denotados con letras o dígitos. Por ejemplo, el conjunto <span class="math inline">\Sigma=\{a,b\}</span> sería un posible alfabeto.</p>
+<p>Una <span class="def">palabra</span> construida sobre un cierto alfabeto es una lista de símbolos de ese alfabeto.</p>
+<div id="exm-" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 1</strong></span> Sobre el alfabeto <span class="math inline">\Sigma=\{a,b\}</span>, podemos tener la palabra <span class="math inline">ab</span>, la palabra formada por el símbolo <span class="math inline">a</span> y el símbolo <span class="math inline">b</span>, o la palabra <span class="math inline">bbb</span> (entre muchas otras). También <span class="math inline">a</span> sería una palabra: en este caso con un solo símbolo, una palabra de longitud uno.</p>
 </div>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon no-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<i class="bi-calendar " style="" role="img" aria-hidden="true"></i> Calendario
-</div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-5" class="callout-5-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
-<i class="callout-icon"></i>
+<i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
 Advertencia
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Aquesta secció està subjecta a canvis.</p>
+<p>No hemos definido formalmente el concepto de <span class="def">lista</span>, así como tampoco lo haremos sobre el concepto de <span class="def">conjunto</span>. Los consideramos conceptos de base para la asignatura. Demasiado básicos para ser definidos con precisión en nuestro contexto. Eso puede acarrearnos a posterior algunas dificultades cuando queramos intentar justificar algunas propiedades demasiado básicas. En esos casos, generalmente, nos limitaremos a considerarlas como obvias o intentaremos convencernos de su veracidad de forma más o menos esquemática o intuitiva.</p>
 </div>
 </div>
-<div class="grid">
-<div class="g-col-10 g-col-md-6">
-<p><strong>Semana 1</strong> <br>
-<em>Sesión 1.1 (teoria)</em> — Presentación del curso y Tema 1 (Teoria de Lenguajes)<br>
-<em>Sesión 1.2 (teoria y laboratorio)</em> — DFAs (1h teoria y 1h RACSO)<br>
-<span class="important">Asignación A1 — problemas sobre el Tema 1 (Teoria de Lenguajes)</span></p>
-<p><strong>Semana 2</strong> <br>
-<em>Sesión 2.1 (problemas)</em> — <span class="soft-alert">Asignación A1</span>, presentaciones de los estudiantes<br>
-<em>Sesión 2.2 (laboratorio)</em> — DFAs<br>
-<span class="important">Asignación A2 — problemas sobre el Tema 2 (Autómata finitos)</span></p>
-<p><strong>Semana 3</strong> <br>
-<em>Sesión 3.1 (problemas)</em> — <span class="soft-alert">Asignación A2</span>, presentaciones de los estudiantes<br>
-<em>Sesión 3.2 (laboratorio)</em> — DFAs</p>
-<p><strong>Semana 4</strong> <br>
-<em>Sesión 4.1 (problemas)</em> — <span class="soft-alert">Asignación A2</span>, presentaciones de los estudiantes<br>
-<em>Sesión 4.2 (laboratorio)</em> — CFGs<br>
-<span class="important">Asignación A3 — problemas sobre el Tema 3 (Gramaticas incontextuales)</span></p>
-<p><strong>Semana 5</strong> <br>
-<em>Sesión 5.1 (problemas)</em> — <span class="soft-alert">Asignación A3</span>, presentaciones de los estudiantes<br>
-<em>Sesión 5.2 (laboratorio)</em> — CFGs</p>
-<p><strong>Semana 6</strong> <br>
-<em>Sesión 6.1 (problemas)</em> — <span class="soft-alert">Asignación A3</span>, presentaciones de los estudiantes<br>
-<em>Sesión 6.2 (laboratorio)</em> — Operaciones regulares</p>
-<p><strong>Semana 7</strong> <br>
-<em>Sesión 7</em> — <span class="important">Examen Parcial 1</span> <span class="important"><span class="TODO">TBD</span></span></p>
-</div>
-<div class="g-col-10 g-col-md-6">
-<p><strong>Semana 8</strong> <br>
-<em>Sesión 8.1 (teoria)</em> — Expressiones regulares y no regularidad<br>
-<em>Sesión 8.2 (laboratorio)</em> — Operaciones regulares y PDAs<br>
-<span class="important">Asignación A4 — problemas sobre el Tema 4 (Expressiones regulares)</span></p>
-<p><strong>Semana 9</strong> <br>
-<em>Sesión 9.1 (problemas)</em> — <span class="soft-alert">Asignación A4</span>, presentaciones de los estudiantes<br>
-<em>Sesión 9.2 (laboratorio)</em> — PDAs<br>
-<span class="important">Asignación A5 —problemas sobre el Tema 5.1 (No regularidad)</span></p>
-<p><strong>Semana 10</strong> <br>
-<em>Sesión 10.1 (problemas)</em> — <span class="soft-alert">Asignación A5</span>, presentaciones de los estudiantes<br>
-<em>Sesión 10.2 (teoria)</em> — Tesi de Church-Turing. Decidibilitat (teoria)</p>
-<p><strong>Semana 11</strong> <br>
-<em>Sesión 11.1 (teoria)</em> — TM, Decidibilitat, Semidecidibilitat, Computabilitat (teoria)<br>
-<em>Sesión 11.2 (teoria)</em> — Decidibilitat vs indecidibilitat (teoria)<br>
-<span class="important">Asignación A6 —problemas sobre el Tema 6 (Màquines de Turing. Decidibilitat, semidecidibilitat, computabilitat) y Tema 7 (Indecidibilitat, no semidecidibilitat, no computabilitat)</span></p>
-<p><strong>Semana 12</strong> <br>
-<em>Sesión 12.1 (teoria y problemas)</em> — Decidibilitat vs Indecidibilitat. Teorema De Rice. <span class="soft-alert">Asignación A6</span>, presentaciones de los estudiantes<br>
-<em>Sesión 12.2 (laboratorio)</em> — Reduciones a K</p>
-<p><strong>Semana 13</strong> <br>
-<em>Sesión 13.1 (problemas)</em> — <span class="soft-alert">Asignación A6</span>, presentaciones de los estudiantes <em>Sesión 13.2 (laboratorio)</em> — Reduciones a WP</p>
-<p><strong>Semana 14</strong> <br>
-<em>Sesión 14.1 (problemas)</em> — Reduccions que no es poden implementar amb el RACSO<br>
-<em>Sesión 14.2 (laboratorio)</em> — Reduciones a CFG</p>
-<p><strong>Semana 15</strong> <br>
-<em>Sesión 15.1</em> — <span class="important">Examen Parcial 2</span> <span class="important"><span class="TODO">TBD</span></span><br>
-<em>Sesión 15.2</em> — <span class="important">Examen Final</span> <span class="important"><span class="TODO">TBD</span></span></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="callout callout-style-default callout-important no-icon callout-titled">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<p>Sobre cualquier alfabeto podremos construir siempre la palabra de longitud <span class="math inline">0</span> o <span class="def">palabra vacía</span>. Esta la notaremos con el símbolo <span class="math inline">\lambda</span> (lambda).</p>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<i class="bi-pencil " style="" role="img" aria-hidden="true"></i> Evaluación
+Advertencia
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Ver la <a href="https://www.cs.upc.edu/~alvarez/tc/DocentAvaluador.html">página principal</a> del curso.<br>
-<!--
-
-Evaluación continua (nota comulativa $e$ de todas las presentaciones: entre $0$ y $2$)
-: Para cada uno de los 7 primeros temas del curso, cada estudiante tiene asignado aleatoriamente un ejercicio para resolver y que presentará a la pizarra.
-
- L'avaluació de les competències transversals [G7.3](https://www.fib.upc.edu/ca/estudis/graus/grau-en-enginyeria-informatica/pla-destudis/assignatures/TC) i [G9.3](https://www.fib.upc.edu/ca/estudis/graus/grau-en-enginyeria-informatica/pla-destudis/assignatures/TC) la realitza cada professor individualment per a cada alumne del seu grup basant-se en les presentacions públiques de l'avaluació continuada. *L'avaluació de les competències no afecta a l'avaluació de l'assignatura.*
-
-Examen Parcial 1 (nota $p_1$: entre $0$ y $8$)
-: [TBD]{.important}  
-Temas 1--3  
-problemas para resolver utilizando el jutge online RACSO  
-
-Examen Parcial 2 (nota $p_2$: entre $0$ y $8$)
-: [TBD]{.important}  
-Temas 4--8  
-problemas para resolver utilizando el jutge online RACSO y parte escrita  
-
-Examen Final (nota $f$: entre $0$ y $10$)
-: [TBD]{.important}  
-Temas 1--8 
-Examen escrito  
-
-Hay dos maneras de aprobar este curso: sin presentarse al examen final o presentandose al examen final. La nota en los dos casos se calcula de manera distinta.
-
-**Sin presentarse al examen final** la nota final es 
- $$
- c =\frac{p_1}{2}+\frac{p_2}{2}+e\ .
- $$
- 
-**Presentandose al examen final** la nota final es
- 
- $$
- \max\left(f,\ \frac{f}{2}+\frac{c}{2}\right)\ .
- $$
-
-
---></p>
+<p>Asumimos siempre que <span class="math inline">\lambda</span> <em>no es</em> un símbolo del alfabeto. Es un meta-símbolo que nos sirve para denotar la lista de longitud <span class="math inline">0</span>. En algunos libro de texto la palabra vacía se denota con <span class="math inline">\epsilon</span>, nosotros la denotamos con <span class="math inline">\lambda</span>.</p>
 </div>
 </div>
+<p>Usaremos las letras <span class="math inline">u</span>, <span class="math inline">v</span> y <span class="math inline">w</span> con posibles subíndices para denotar palabras. Del siguiente modo denotaremos la <span class="def">longitud de una palabra</span> <span class="math inline">u</span> con <span class="math inline">|u|</span>.</p>
+<div id="exm-" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 2</strong></span> <span class="math inline">|ab|=2</span>, <span class="math inline">|bbb|=3</span>, <span class="math inline">|a|=1</span> y <span class="math inline">|\lambda|=0</span>.</p>
 </div>
-<p><br> <br></p>
-<p>Por el momento, esta página web está basada casi en su totalidad en material de Carme Álvarez Faura y en el contenido de algunos vídeos online de Guillem Godoy.</p>
+<p>Esta notación se extiende para denotar <span class="def">ocurrencias de una palabra dentro de otra</span>. El numero de occurrencias de la palabra <span class="math inline">w</span> dentro de la palabra <span class="math inline">u</span> se denota con <span class="math inline">|u|_w</span>.</p>
+<div id="exm-" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 3</strong></span> &nbsp;</p>
+<ul>
+<li><span class="math inline">|a|_a=1</span>, el número de ocurrencias de <span class="math inline">a</span> en <span class="math inline">a</span> es <span class="math inline">1</span>,</li>
+<li><span class="math inline">|bbb|_b=3</span>, el número de ocurrencias de <span class="math inline">b</span> en <span class="math inline">bbb</span> es <span class="math inline">3</span> y</li>
+<li><span class="math inline">|bbb|_{bb}=2</span>, el número de ocurrencias de la palabra <span class="math inline">bb</span> en <span class="math inline">bbb</span> es <span class="math inline">2</span>, la ocurrencia que aparece a posición uno y la que aparece a posición dos.</li>
+</ul>
+</div>
+<p>Con <span class="math inline">u[i]</span> denotamos el <span class="def">símbolo <span class="math inline">i</span>-esimo</span> de la palabra <span class="math inline">u</span>.</p>
+<div id="exm-" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 4</strong></span> &nbsp;</p>
+<ul>
+<li><span class="math inline">ab[1]=a</span>, la palabra <span class="math inline">ab</span> a posición uno tiene una <span class="math inline">a</span>, y</li>
+<li><span class="math inline">ab[2]=b</span>, la palabra <span class="math inline">ab</span> a posición dos una <span class="math inline">b</span>.</li>
+</ul>
+</div>
+<p>Mediante la operación producto representada con un punto <span class="math inline">\cdot</span> como operación enfija (o a veces sin escribir nada) representamos la <span class="def">concatenación</span> de dos palabras. La concatenación de las palabras <span class="math inline">u</span> y <span class="math inline">v</span> es <span class="math inline">u\cdot v</span> o <span class="math inline">uv</span>. La concatenación es una operación que da como resultado la concatenación de las respectivas listas.</p>
+<div id="exm-" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 5</strong></span> La concatenación de la palabra <span class="math inline">ab</span> con la palabra <span class="math inline">bbb</span>, es decir <span class="math inline">(ab)\cdot (bbb)</span>, produce la palabra <span class="math inline">abbbb</span>.</p>
+</div>
+<p>La <span class="def">palabra vacía</span> <span class="math inline">\lambda</span> es el elemento neutro de la concatenación, es decir que por cualquier palabra <span class="math inline">u</span>, <span class="math inline">u\cdot \lambda=\lambda\cdot u=u</span>, cosa que se puede comprobar fácilmente. Además no es difícil comprobar que la concatenación de palabras es una operación asociativa, es decir que <span class="math inline">u\cdot(v\cdot w)=(u\cdot v)\cdot w</span> para todas palabras <span class="math inline">u</span>, <span class="math inline">v</span>, <span class="math inline">w</span>.</p>
+<p>Mediante <span class="math inline">\Sigma^*</span> (<strong>Sigma estrella</strong>) representaremos el conjunto de todas las palabras posibles que se pueden construir sobre el alfabeto <span class="math inline">\Sigma</span>.</p>
+<div id="exm-" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 6</strong></span> Si <span class="math inline">\Sigma=\{a,b\}</span> podremos construir todas las palabras posibles sobre <span class="math inline">\Sigma</span> empezando por la palabra de longitud cero <span class="math inline">\lambda</span>, las dos palabras de longitud <span class="math inline">1</span>, <span class="math inline">a</span> y <span class="math inline">b</span>, las cuatro palabras de longitud dos, <span class="math inline">aa</span>, <span class="math inline">ab</span>, <span class="math inline">ba</span>, <span class="math inline">bb</span> y así sucesivamente. Es decir, <span class="math display">
+\Sigma^*=\{\lambda, a, b, aa, ab, ba, bb, \dots\}\ .
+</span></p>
+</div>
+<p>Un <span class="def">lenguaje</span> sobre un alfabeto <span class="math inline">\Sigma</span> es un subconjunto cualquiera de <span class="math inline">\Sigma^*</span>. Los lenguajes los denotaremos solitamente con la letra <span class="math inline">L</span>.</p>
+<div id="exm-" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 7</strong></span> El lenguaje <span class="math inline">L</span> de las palabras sobre <span class="math inline">\{a,b\}</span> y del longitud múltiple de <span class="math inline">2</span> lo podríamos representar de esta manera: <span class="math display">
+L=\{w\in \{a,b\}^* \mid |w|\in \dot 2\}\ .
+</span> Fijémonos en que estamos usando esencialmente la notación clásica de conjuntos donde ponemos en primer lugar la variable por la que implícitamente se puede sustituir a una palabra y a la derecha del simbulo <span class="math inline">\mid</span> describimos la propiedad que debe cumplir esa palabra para pertenecer efectivamente al conjunto. El mismo conjunto de palabras de longitud múltiple de dos lo podemos representar de forma más explícita como sigue <span class="math display">
+L=\{\lambda, aa, ab, ba, bb, aaaa, aaab, \dots\}\ .
+</span></p>
+</div>
+<div id="exm-" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 8</strong></span> El lenguaje <span class="math inline">L</span> de las palabras sobre <span class="math inline">\{a,b\}</span> que tienen alguna ocurrencia de alguna <span class="math inline">a</span>. Nuevamente usamos la notación clásica de conjuntos: <span class="math display">
+L=\{w\in \{a,b\}^* \mid \exists w_1,w_2\in \{a,b\}^*\ \  w=w_1aw_2\}\ .
+</span> En este caso la propiedad viene expresada mediante un cuantificador existencial. Si <span class="math inline">w</span> coincide con la concatenación de una palabra cualquiera <span class="math inline">w_1</span> seguida de <span class="math inline">a</span> seguida de otra palabra cualquiera <span class="math inline">w_2</span> es que cumple nuestra propiedad.</p>
+<p>Alternativamente, podríamos representar <span class="math inline">L</span> sacando provecho de la notación para representar el número de ocurrencias de <span class="math inline">a</span> dentro de una palabra: <span class="math display">
+L=\{w\in \{a,b\}^*\mid |w|_a\geq 1\}\ .
+</span></p>
+</div>
+<div id="exm-" class="theorem example">
+<p><span class="theorem-title"><strong>Ejemplo 9</strong></span> El lenguaje <span class="math inline">L</span> de las palabras sobre <span class="math inline">\{a,b\}</span> que tales que toda ocurrencia de <span class="math inline">a</span> viene seguida inmediatamente de una ocurrencia de <span class="math inline">b</span>. Una posible manera de denotarlo es esta: <span class="math display">
+L=\{w\in \{a,b\}^* \mid \forall w_1,w_2\in \{a,b\}^* (w=w_1aw_2 \implies \exists w_2'\in \{a,b\}^*\ w_2=bw_2')\}\ .
+</span> Entendamos cómo funciona el cuantificador universal (<span class="math inline">\forall</span>) combinado con la implicación (<span class="math inline">\implies</span>). Fijaos que para aquellos <span class="math inline">w_1</span> y <span class="math inline">w_2</span> tales que <span class="math inline">w</span> no coincide con <span class="math inline">w_1</span> seguido de <span class="math inline">a</span>, seguido de <span class="math inline">w_2</span> resulta que el antecedente de la implicación es falso y por tanto la implicación es cierta. Ello nos garantiza que el consecuente debe cumplirse simplemente para aquellas particiones de la palabra <span class="math inline">w</span> que nos interesan.</p>
+<p>Una forma alternativa de describir este lenguaje <span class="math inline">L</span> sería la siguiente: <span class="math display">
+L=\{w\in \{a,b\}^* \mid w=\lambda \lor (|w|_{aa}=0 \land \exists w'\in \{a,b\}^*\ w=w'b)\}\ .
+</span></p>
+<p>Nuevamente sacamos provecho de la notación adicional que hemos introducido para representar ocurrencias de una palabra dentro de otra. Las palabras tales que toda <span class="math inline">a</span> viene seguida de una <span class="math inline">b</span> no pueden contener <span class="math inline">aa</span> pero también debemos garantizar que la palabra no termina en <span class="math inline">a</span> de modo que añadimos esta condición adicional forzando a que termina en <span class="math inline">b</span> (o que alternativamente es la palabra vacía <span class="math inline">\lambda</span>).</p>
+</div>
 
 
 
@@ -1176,10 +1010,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../intro.html" class="pagination-link" aria-label="*Introducción*">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><em>Introducción</em></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../T1/operations.html" class="pagination-link" aria-label="Operaciones sobre lenguajes">
+        <span class="nav-page-text">Operaciones sobre lenguajes</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
