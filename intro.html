@@ -39,7 +39,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e26003cea8cd680ca0c55a263523d882.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-fb6c03a126ee47a48c6c47000bce65bf.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-7ad20eabb9fe09221f591bd23ec01dff.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -117,7 +117,7 @@ window.Quarto = {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar floating nav-fixed slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -474,10 +474,9 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
     <div class="quarto-other-links"><h2>Otros Enlaces</h2><ul><li><a href="https://racso.lsi.upc.edu/juezwsgi/index"><i class="bi bi-link-45deg"></i>RACSO Online Judge</a></li><li><a href="https://www.cs.upc.edu/~alvarez/tc2.html"><i class="bi bi-link-45deg"></i>TC - Página principal</a></li><li><a href="https://www.fib.upc.edu/ca/estudis/graus/grau-en-enginyeria-informatica/pla-destudis/assignatures/TC"><i class="bi bi-link-45deg"></i>Syllabus</a></li></ul></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -498,23 +497,48 @@ window.Quarto = {
 </header>
 
 
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/Kurt_Gödel.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Kurt Gödel</figcaption>
+</figure>
 </div>
-<div class="callout-title-container flex-fill">
-Advertencia
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/Alan_Turing.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Alan Turing</figcaption>
+</figure>
 </div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="assets/Alonzo_Church.jpg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>Alonzo Church</figcaption>
+</figure>
 </div>
-<div class="callout-body-container callout-body">
-<p>Este apartado será disponible más cerca del comienzo del curso.</p>
-</div>
-</div>
+</div></div><p>Este curso es una primera introducción a dos de las áreas centrales de la <span class="def">Teoría de la Computación</span> (TC): la <em>teoría de los autómatas y lenguajes formales</em> y la <em>teoría de la computabilidad</em>.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>La Teoría de la Computación es una área de investigación activa y con muchas interconexiones con Informática, Matemática, Lógica, y Filosofía. Por ejemplo, con el Análisis de Algoritmos, Computación cuántica, Criptografía, … Recientemente, ha sido argumentado también que la Teoría de la Computación, sus conceptos y metodologías son también muy relevantes en ámbitos como Biología molecular, Ecología y Evolución, Neurociencias, Física cuántica, Economía, y Ciencias Sociales.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></p>
+<p>La pregunta motivadora detrás de la Teoría de la Computación son las siguiente:</p>
+<p><strong><em>¿Cuáles son las capacidades (y las limitaciones) de los ordenadores?</em></strong></p>
+<p><strong>¿Qué significa en realidad <em>computación</em>?</strong></p>
+<p>La Teoría de la Computación nace a los alrededores de los años 1930-1940 con el trabajo de matemáticos y lógicos como <a href="https://es.wikipedia.org/wiki/Kurt_Gödel">Kurt Gödel</a>, <a href="https://es.wikipedia.org/wiki/Alan_Turing">Alan Turing</a>, o <a href="https://es.wikipedia.org/wiki/Alonzo_Church">Alonzo Church</a> (entre otros) que descubren que hay problemas (interesantes) que no se pueden resolver con un ordenador. Por ejemplo:</p>
+<ul>
+<li>Decidir si una afirmación matemática es cierta o falsa.</li>
+<li>Decidir si un programa con un dado input para o no.</li>
+</ul>
+<p>La <em>teoría de la calculabilidad</em>, muy informalmente, está interesada en clasificar los problemas en <em>decidibles</em> o <em>no decidibles</em>. Ella es la precursora de la <em>teoría de la complejidad</em> que nace en los años 1960 y es interesada en clasificar los problemas decidibles según su dificultad. Esta es una área de investigación muy activa, y su pregunta abierta central es decidir si <span class="math inline">\textsf{P}=\textsf{NP}</span> o no.</p>
 
 
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Notas</h2>
+
+<ol>
+<li id="fn1"><p>La tercera área principal que constituye TC es la <em>teoría de la complejidad</em>. En este curso esta parte será tratada de manera un poco transversal.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Esto ha sido argumentado en el libro <a href="https://www.math.ias.edu/files/Book-online-Aug0619.pdf">Mathematics and Computation</a> by Avi Wigderson.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
