@@ -208,7 +208,7 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../T1/T1-self-study.html" class="sidebar-item-text sidebar-link"><i class="bi bi-book" role="img">
 </i> 
- <span class="menu-text">Auto-aprendizaje</span></a>
+ <span class="menu-text">Referencias</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -574,7 +574,7 @@ L=\{\lambda, aa, ab, ba, bb, aaaa, aaab, \dots\}\ .
 </div>
 <div id="exm-" class="theorem example">
 <p><span class="theorem-title"><strong>Ejemplo 8</strong></span> El lenguaje <span class="math inline">L</span> de las palabras sobre <span class="math inline">\{a,b\}</span> que tienen alguna ocurrencia de alguna <span class="math inline">a</span>. Nuevamente usamos la notación clásica de conjuntos: <span class="math display">
-L=\{w\in \{a,b\}^* \mid \exists w_1,w_2\in \{a,b\}^*\ \  w=w_1aw_2\}\ .
+L=\{w\in \{a,b\}^* \mid \exists w_1,w_2\  w=w_1aw_2\}\ .
 </span> En este caso la propiedad viene expresada mediante un cuantificador existencial. Si <span class="math inline">w</span> coincide con la concatenación de una palabra cualquiera <span class="math inline">w_1</span> seguida de <span class="math inline">a</span> seguida de otra palabra cualquiera <span class="math inline">w_2</span> es que cumple nuestra propiedad.</p>
 <p>Alternativamente, podríamos representar <span class="math inline">L</span> sacando provecho de la notación para representar el número de ocurrencias de <span class="math inline">a</span> dentro de una palabra: <span class="math display">
 L=\{w\in \{a,b\}^*\mid |w|_a\geq 1\}\ .
@@ -582,10 +582,10 @@ L=\{w\in \{a,b\}^*\mid |w|_a\geq 1\}\ .
 </div>
 <div id="exm-" class="theorem example">
 <p><span class="theorem-title"><strong>Ejemplo 9</strong></span> El lenguaje <span class="math inline">L</span> de las palabras sobre <span class="math inline">\{a,b\}</span> tales que toda ocurrencia de <span class="math inline">a</span> viene seguida inmediatamente de una ocurrencia de <span class="math inline">b</span>. Una posible manera de denotarlo es esta: <span class="math display">
-L=\{w\in \{a,b\}^* \mid \forall w_1,w_2\in \{a,b\}^* (w=w_1aw_2 \implies \exists w_2'\in \{a,b\}^*\ w_2=bw_2')\}\ .
+L=\{w\in \{a,b\}^* \mid \forall w_1,w_2 (w=w_1aw_2 \implies \exists w_2'\ w_2=bw_2')\}\ .
 </span> Entendamos cómo funciona el cuantificador universal (<span class="math inline">\forall</span>) combinado con la implicación (<span class="math inline">\implies</span>). Fijaos que para aquellos <span class="math inline">w_1</span> y <span class="math inline">w_2</span> tales que <span class="math inline">w</span> no coincide con <span class="math inline">w_1</span> seguido de <span class="math inline">a</span>, seguido de <span class="math inline">w_2</span> resulta que el antecedente de la implicación es falso y por tanto la implicación es cierta. Ello nos garantiza que el consecuente debe cumplirse simplemente para aquellas particiones de la palabra <span class="math inline">w</span> que nos interesan.</p>
 <p>Una forma alternativa de describir este lenguaje <span class="math inline">L</span> sería la siguiente: <span class="math display">
-L=\{w\in \{a,b\}^* \mid w=\lambda \lor (|w|_{aa}=0 \land \exists w'\in \{a,b\}^*\ w=w'b)\}\ .
+L=\{w\in \{a,b\}^* \mid w=\lambda \lor (|w|_{aa}=0 \land \exists w'\ w=w'b)\}\ .
 </span></p>
 <p>Nuevamente sacamos provecho de la notación adicional que hemos introducido para representar ocurrencias de una palabra dentro de otra. Las palabras tales que toda <span class="math inline">a</span> viene seguida de una <span class="math inline">b</span> no pueden contener <span class="math inline">aa</span> pero también debemos garantizar que la palabra no termina en <span class="math inline">a</span> de modo que añadimos esta condición adicional forzando a que termina en <span class="math inline">b</span> (o que alternativamente es la palabra vacía <span class="math inline">\lambda</span>).</p>
 </div>
